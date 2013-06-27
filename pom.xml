@@ -109,7 +109,7 @@
 		</developer>
 	</developers>
 	<distributionManagement>
-		<repository>
+	<!--	<repository>
 			<id>releases</id>
 			<name>OLAT Internal Nexus Release Repository</name>
 			<url>http://repo.olat.uzh.ch/nexus/content/repositories/releases</url>
@@ -119,6 +119,14 @@
 			<name>OLAT Internal Nexus Snapshot Repository</name>
 			<url>http://repo.olat.uzh.ch/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
+	-->
+		<repository>
+			<id>Nexus-Common-Server-42</id>
+			<name>Common Utils</name>
+			<url>
+			http://192.168.105.42:8081/nexus/content/repositories/devops-patientvisit/
+			</url>
+		</repository>
 	</distributionManagement>
 	<issueManagement>
 		<system>JIRA</system>
