@@ -121,10 +121,10 @@
 		</snapshotRepository>
 	-->
 		<repository>
-			<id>Nexus-Common-Server-42</id>
-			<name>Common Utils</name>
+			<id>scholastic</id>
+			<name>scholastic</name>
 			<url>
-			http://192.168.105.42:8081/nexus/content/repositories/devops-patientvisit/
+			http://192.168.105.42:8081/nexus/content/repositories/scholastic/
 			</url>
 		</repository>
 	</distributionManagement>
