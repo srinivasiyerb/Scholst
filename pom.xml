@@ -87,10 +87,10 @@
 			</resource>
 		</resources>
 		<plugins>
+<!--
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>2.4.3</version>
-<!--
 				<executions>
 					<execution>
 						<id>copy-resources</id>
@@ -120,8 +120,8 @@
 						</configuration>
 					</execution>
 				</executions>
--->
 			</plugin>
+-->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
