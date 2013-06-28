@@ -2,22 +2,183 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.rl.scholastic</groupId>
-	<artifactId>Scholastic</artifactId>
-	<version>1.1.0.0</version>
+	<groupId>com.rl.techwah</groupId>
+	<artifactId>OLAT-LMS</artifactId>
+	<version>7.2.0.0</version>
 	<packaging>war</packaging>
-	<name>Scholastic Maven Webapp</name>
+	<name>OLAT LMS</name>
 	<url>http://www.olat.org/</url>
+	<description>
+  Welcome to the OLAT (Online Learning And Training) Developer Project Site.  This site
+  contains materials chiefly of concern to developers (e.g., unit testing and SCA output etc.)
+  and is rebuilt periodically on a regular basis.  The site structure is divided between
+  project information (e.g., infrastructure, mailing lists, repositories etc.) and reports
+  (e.g., unit testing, SCAs etc.)
+
+  The development of OLAT itself started in 1999 at the University of Zürich, Switzerland,
+  where it is the strategic learning management system.  For further information see our main project website.
+  </description>
+	<organization>
+		<name>Online Learning And Training (University of Zürich)</name>
+		<url>http://www.olat.org/</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Apache 2.0 Open Source License</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0</url>
+			<distribution>manual</distribution>
+			<comments>
+		OLAT is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+		</comments>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<id>amoran</id>
+			<name>Alan Moran</name>
+			<email>alan.moran@id.uzh.ch</email>
+			<roles>
+				<role>Head of Development</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
+		<developer>
+			<id>pbrunner</id>
+			<name>Patrick Brunner</name>
+			<email>patrick.brunner@id.uzh.ch</email>
+			<roles>
+				<role>Quality Assurance Manager</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
+		<developer>
+			<id>asch</id>
+			<name>Alexander Schneider</name>
+			<email>alexander.schneider@id.uzh.ch</email>
+			<roles>
+				<role>Database Administrator</role>
+				<role>Deployment Manager</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
+		<developer>
+			<id>matthai</id>
+			<name>Matthai Karumacheril</name>
+			<email>matthai.karumacheril@id.uzh.ch</email>
+			<roles>
+				<role>Developer</role>
+				<role>Systems Analyst</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
+		<developer>
+			<id>lavinia</id>
+			<name>Lavinia Dumitrescu</name>
+			<email>lavinia.dumitrescu@id.uzh.ch</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
+		<developer>
+			<id>guretzki</id>
+			<name>Christian Guretzki</name>
+			<email>christian.guretzki@id.uzh.ch</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
+		<developer>
+			<id>mila</id>
+			<name>Milanka Ringwald</name>
+			<email>milanka.ringwald@id.uzh.ch</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
+		<developer>
+			<id>schnider</id>
+			<name>Guido Schnider</name>
+			<email>guido.schnider@id.uzh.ch</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
+	</developers>
 	<distributionManagement>
+	<!--	<repository>
+			<id>releases</id>
+			<name>OLAT Internal Nexus Release Repository</name>
+			<url>http://repo.olat.uzh.ch/nexus/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>OLAT Internal Nexus Snapshot Repository</name>
+			<url>http://repo.olat.uzh.ch/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	-->
 		<repository>
-			<id>Nexus-Common-Server-42</id>
-			<name>Common Utils</name>
-			<url>http://192.168.105.42:8081/nexus/content/repositories/devops-patientvisit</url>
+			<id>scholastic</id>
+			<name>scholastic</name>
+			<url>
+			http://192.168.105.42:8081/nexus/content/repositories/devops-patientvisit
+			</url>
 		</repository>
 	</distributionManagement>
+	<issueManagement>
+		<system>JIRA</system>
+		<url>http://bugs.olat.org/jira/secure/Dashboard.jspa</url>
+	</issueManagement>
+	<ciManagement>
+		<system>Hudson</system>
+		<url>http://hudson.olat.uzh.ch/hudson</url>
+		<!-- notifiers are not required -->
+	</ciManagement>
 	<scm>
-		<developerConnection>scm:git:http://192.168.105.86/git/Scholastic.git</developerConnection>
+		<connection>scm:hg:http://hg.olat.org/repos</connection>
+		<developerConnection>scm:hg:http://hg.olat.org/repos</developerConnection>
+		<url>http://hg.olat.org/repos</url>
 	</scm>
+	<mailingLists>
+		<mailingList>
+			<name>olat-announce</name>
+			<subscribe>https://lists.uzh.ch/lists.olat.org/sympa/subscribe/olat-announce</subscribe>
+			<unsubscribe>https://lists.uzh.ch/lists.olat.org/sympa/sigrequest/olat-announce</unsubscribe>
+			<post>olat-announce@lists.olat.org</post>
+			<archive>https://lists.uzh.ch/lists.olat.org/sympa/info/olat-announce</archive>
+		</mailingList>
+		<mailingList>
+			<name>olat-users</name>
+			<subscribe>https://lists.uzh.ch/lists.olat.org/sympa/subscribe/olat-users</subscribe>
+			<unsubscribe>https://lists.uzh.ch/lists.olat.org/sympa/sigrequest/olat-users</unsubscribe>
+			<post>olat-users@lists.olat.org</post>
+			<archive>https://lists.uzh.ch/lists.olat.org/sympa/info/olat-users</archive>
+		</mailingList>
+		<mailingList>
+			<name>olat-developers</name>
+			<subscribe>https://lists.uzh.ch/lists.olat.org/sympa/subscribe/olat-developers</subscribe>
+			<unsubscribe>https://lists.uzh.ch/lists.olat.org/sympa/sigrequest/olat-developers</unsubscribe>
+			<post>olat-developers@lists.olat.org</post>
+			<archive>https://lists.uzh.ch/lists.olat.org/sympa/info/olat-developers</archive>
+		</mailingList>
+		<mailingList>
+			<name>olat-translators</name>
+			<subscribe>https://lists.uzh.ch/lists.olat.org/sympa/subscribe/olat-translators</subscribe>
+			<unsubscribe>https://lists.uzh.ch/lists.olat.org/sympa/sigrequest/olat-translators</unsubscribe>
+			<post>olat-translators@lists.olat.org</post>
+			<archive>https://lists.uzh.ch/lists.olat.org/sympa/info/olat-translators</archive>
+		</mailingList>
+		<mailingList>
+			<name>olat-usability</name>
+			<subscribe>https://lists.uzh.ch/lists.olat.org/sympa/subscribe/olat-usability</subscribe>
+			<unsubscribe>https://lists.uzh.ch/lists.olat.org/sympa/sigrequest/olat-usability</unsubscribe>
+			<post>olat-usability@lists.olat.org</post>
+			<archive>https://lists.uzh.ch/lists.olat.org/sympa/info/olat-usability</archive>
+		</mailingList>
+	</mailingLists>
 	<!-- Unless otherwise explicitly stated the character encoding for all resources 
 		(e.g., source, test etc.) will be UTF-8. This can be overriden at the plugin 
 		level if necessary. -->
@@ -26,11 +187,33 @@
 		<org.springframework.version>3.0.5.RELEASE</org.springframework.version>
 		<skipTests>true</skipTests>
 	</properties>
+	<profiles>
+		<profile>
+		<!-- this serves as an example of how to run something whenever the os familiy matches unix (includes linux as well) -->
+			<id>linux</id>
+			<activation><os><family>unix</family></os></activation>
+			<properties>
+				<os.property.file>linux.properties</os.property.file>
+			</properties>
+			
+		</profile>
+		<profile>
+		<!-- this serves as an example of how to run something whenever the os familiy matches unix (includes linux as well) -->
+			<id>windows</id>
+			<activation><os><family>windows</family></os></activation>
+			<properties>
+				<os.property.file>win.properties</os.property.file>
+			</properties>
+		</profile>
+	</profiles>
 	<repositories>
 		<repository>
-			<id>java.net2</id>
-			<name>Repository hosting the jee6 artifacts</name>
-			<url>http://download.java.net/maven/2</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<id>repo.olat.org</id>
+			<name>OLAT Maven Repository</name>
+			<url>http://repo.olat.org/nexus/content/groups/public</url>
 		</repository>
 	</repositories>
 	<pluginRepositories>
@@ -113,19 +296,10 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-dependency-plugin</artifactId>
-				<configuration>
-					<artifactItems>
-						<artifactItem>
-						<destFileName>${project.artifactId}</destFileName>
-						</artifactItem>
-					</artifactItems>
-				</configuration>
-			</plugin>
+
+
+
 		</plugins>
-		<finalName>${project.artifactId}</finalName>
 		<pluginManagement>
 			<plugins>
 
