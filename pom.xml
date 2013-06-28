@@ -93,19 +93,19 @@
 				<version>2.4.3</version>
 				<executions>
 					<execution>
-						<id>copy-resources</id>
+						<id>copy-resources</id> -->
 						<!-- hook in to generate and copy filtered resources when running eclipse:eclipse 
 							as this plugin runs in the generete-resources phase -->
-						<phase>generate-resources</phase>
+						<!-- <phase>generate-resources</phase>
 						<goals>
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
 							<outputDirectory>${basedir}/target/classes</outputDirectory>
 							<resources>
-								<resource>
+								<resource> -->
 									<!-- place resources you like to get filtered an copied -->
-									<directory>src/main/templates</directory>
+								<!--	<directory>src/main/templates</directory>
 									<filtering>true</filtering>
 								</resource>
 								<resource>
