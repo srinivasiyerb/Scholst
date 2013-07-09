@@ -15,17 +15,6 @@
 			<url>http://192.168.105.42:8081/nexus/content/repositories/scholastic/</url>
 		</repository>
 	</distributionManagement>
-	 <servers>
-	    <server>
-      		<id>Nexus-Common-Server-42</id>
-      		<username>admin</username>
-      		<!-- other optional elements: -->
-        	<password>admin@123</password>
-		 <!--        <privateKey>/path/to/identity</privateKey> (default is ~/.ssh/id_dsa)
-			        <passphrase>my_key_passphrase</passphrase> -->
-      
-    	   </server>
-  	</servers>
 	<scm>
 		<developerConnection>scm:git:http://192.168.105.86/git/Scholastic.git</developerConnection>
 	</scm>
