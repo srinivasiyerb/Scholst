@@ -682,7 +682,7 @@
 		<dependency>
 		  <groupId>org.jboss.cache</groupId>
 		  <artifactId>jbosscache-core</artifactId>
-		  <version>3.2.7.GA</version>
+		  <version>3.2.2.GA</version>
 		</dependency>		
 		<dependency>
 			<groupId>reload-diva</groupId>
@@ -851,7 +851,7 @@
 		<dependency>
 		  <groupId>org.jboss.cache</groupId>
 		  <artifactId>jbosscache-core</artifactId>
-		  <version>3.2.7.GA</version>
+		  <version>3.2.2.GA</version>
 		</dependency>
 		<!-- /Dependencys for onyx plugin -->
 		<dependency>
