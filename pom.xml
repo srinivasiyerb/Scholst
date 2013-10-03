@@ -21,9 +21,9 @@
 		</repository>
 	</distributionManagement>
 	
-	<scm>
+	<!-- <scm>
 		<developerConnection>scm:git:http://192.168.105.86/git/Scholastic.git</developerConnection>
-	</scm>
+	</scm> -->
 	<!-- Unless otherwise explicitly stated the character encoding for all resources 
 		(e.g., source, test etc.) will be UTF-8. This can be overriden at the plugin 
 		level if necessary. -->
