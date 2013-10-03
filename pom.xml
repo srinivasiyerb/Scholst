@@ -17,7 +17,7 @@
 -->
 		<repository>
 			<id>scholastic</id>
-			<url>http://192.168.103.33:8081/nexus/content/repositories/scholastic</url>
+			<url>http://devops.relevancelab.com/nexus/content/repositories/scholastic</url>
 		</repository>
 	</distributionManagement>
 	
