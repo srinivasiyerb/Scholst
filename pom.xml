@@ -15,12 +15,12 @@
 			<name>Common Utils</name>
 			<url>http://192.168.105.42:8081/nexus/content/repositories/scholastic/</url>
 		</repository>
--->
+
 		<repository>
 			<id>scholastic</id>
 			<url>http://devops.relevancelab.com/nexus/content/repositories/scholastic</url>
 		</repository>
-		
+	-->	
 	</distributionManagement>
 	
 	<!-- <scm>
