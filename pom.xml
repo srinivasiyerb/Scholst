@@ -9,6 +9,10 @@
 	<name>Scholastic Maven Webapp</name>
 	<url>http://www.olat.org/</url>
 	<distributionManagement>
+	<repository>
+    <id>releases</id>
+    <url>http://192.168.150.55:8081/nexus/content/repositories/releases</url>
+  </repository>
 <!--		
         <repository>
 			<id>Nexus-Common-Server-42</id>
@@ -21,7 +25,7 @@
 			<url>http://devops.relevancelab.com/nexus/content/repositories/scholastic</url>
 		</repository>
 	-->	
-	</distributionManagement>
+</distributionManagement>
 	
 	<!-- <scm>
 		<developerConnection>scm:git:http://192.168.105.86/git/Scholastic.git</developerConnection>
