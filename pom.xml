@@ -12,7 +12,7 @@
   <repository>
     <id>TestRepo</id>
     <url>http://192.168.150.55:8081/nexus/content/repositories/TestRepo</url>
-  </repository
+  </repository>
 <!--		
         <repository>
 			<id>Nexus-Common-Server-42</id>
