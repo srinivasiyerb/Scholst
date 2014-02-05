@@ -8,8 +8,8 @@
 	<packaging>war</packaging>
 	<name>Scholastic Maven Webapp</name>
 	<url>http://www.olat.org/</url>
-	<distributionManagement>
-<!--
+<!--	<distributionManagement>
+
   <repository>
   
     <id>TestRepo</id>
@@ -26,8 +26,8 @@
 			<id>scholastic</id>
 			<url>http://devops.relevancelab.com/nexus/content/repositories/scholastic</url>
 		</repository>
-	-->	
-</distributionManagement>
+		
+</distributionManagement> -->
 	
 	<!-- <scm>
 		<developerConnection>scm:git:http://192.168.105.86/git/Scholastic.git</developerConnection>
